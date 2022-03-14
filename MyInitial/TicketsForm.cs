@@ -14,7 +14,7 @@ namespace Ticketing
         TicketPrice mTicketPrice;
         int mSection = 2;
         int mQuantity = 0;
-        bool mDiscount = false;
+        int mDiscount = 0;
 
         public TicketsForm()
         {
@@ -23,7 +23,7 @@ namespace Ticketing
 
         private void TicketsForm_Load(object sender, EventArgs e)
         {
-
+            txtQuantity.Text = "" + mQuantity;
         }
 
         private void cmdCalculate_Click(object sender, EventArgs e)
@@ -31,19 +31,22 @@ namespace Ticketing
             mQuantity = int.Parse(txtQuantity.Text);
 
             if (chkDiscount.Checked)
-                { mDiscount = true; }
+            { mDiscount = 1; }
+            if (chkChild.Checked)
+            { mDiscount = 2; }
 
             if (radBalcony.Checked)
-                { mSection = 1; }
+            { mSection = 1; }
             if (radGeneral.Checked)
-                { mSection = 2; }
+            { mSection = 2; }
             if (radBox.Checked)
-                { mSection = 3; }
+            { mSection = 3; }
 
             mTicketPrice = new TicketPrice(mSection, mQuantity, mDiscount);
 
             mTicketPrice.calculatePrice();
             lblAmount.Text = System.Convert.ToString(mTicketPrice.AmountDue);
         }
-     }
+
+    }
 }
