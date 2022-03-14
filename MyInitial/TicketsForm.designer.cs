@@ -38,11 +38,8 @@
             this.radBox = new System.Windows.Forms.RadioButton();
             this.grpSection = new System.Windows.Forms.GroupBox();
             this.cmdCalculate = new System.Windows.Forms.Button();
-<<<<<<< HEAD
             this.radStall = new System.Windows.Forms.RadioButton();
-=======
             this.chkChild = new System.Windows.Forms.CheckBox();
->>>>>>> feat1.2_discount_type
             this.grpSection.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -145,7 +142,6 @@
             this.cmdCalculate.UseVisualStyleBackColor = true;
             this.cmdCalculate.Click += new System.EventHandler(this.cmdCalculate_Click);
             // 
-<<<<<<< HEAD
             // radStall
             // 
             this.radStall.AutoSize = true;
@@ -156,7 +152,7 @@
             this.radStall.Text = "Back Stall";
             this.radStall.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.radStall.UseVisualStyleBackColor = true;
-=======
+
             // chkChild
             // 
             this.chkChild.AutoSize = true;
@@ -167,7 +163,7 @@
             this.chkChild.Text = "Child";
             this.chkChild.UseVisualStyleBackColor = true;
             
->>>>>>> feat1.2_discount_type
+
             // 
             // TicketsForm
             // 
@@ -204,11 +200,9 @@
         private System.Windows.Forms.RadioButton radBox;
         private System.Windows.Forms.GroupBox grpSection;
         private System.Windows.Forms.Button cmdCalculate;
-<<<<<<< HEAD
         private System.Windows.Forms.RadioButton radStall;
-=======
         private System.Windows.Forms.CheckBox chkChild;
->>>>>>> feat1.2_discount_type
+
     }
 }
 

@@ -31,13 +31,9 @@ namespace Ticketing
             mQuantity = int.Parse(txtQuantity.Text);
 
             if (chkDiscount.Checked)
-<<<<<<< HEAD
-            { mDiscount = true; }
-=======
             { mDiscount = 1; }
             if (chkChild.Checked)
             { mDiscount = 2; }
->>>>>>> feat1.2_discount_type
 
             if (radBalcony.Checked)
             { mSection = 1; }
@@ -45,20 +41,14 @@ namespace Ticketing
             { mSection = 2; }
             if (radBox.Checked)
             { mSection = 3; }
-<<<<<<< HEAD
             if (radStall.Checked)
             { mSection = 4; }
-=======
->>>>>>> feat1.2_discount_type
 
             mTicketPrice = new TicketPrice(mSection, mQuantity, mDiscount);
 
             mTicketPrice.calculatePrice();
             lblAmount.Text = System.Convert.ToString(mTicketPrice.AmountDue);
         }
-<<<<<<< HEAD
-=======
 
->>>>>>> feat1.2_discount_type
     }
 }
